@@ -39,7 +39,7 @@ public class DiscreteSeekBarPreference extends Preference implements DiscreteSee
 			mValue = mMin;
 			a.recycle();
 
-			if (mFormat == null || mFormat.trim().equals("")) {
+			if (mFormat == null || "".equals(mFormat.trim())) {
 				mFormat = "%d";
 			}
 		}
